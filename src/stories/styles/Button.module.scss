@@ -1,0 +1,42 @@
+@import "common";
+
+.button {
+    padding: 10px 20px;
+    background-color: #66BB6A;
+    color: #fff; 
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    &--large{
+        padding: 20px 40px;
+    }
+    &--medium{
+        padding: 10px 20px;
+    }
+    &--small{
+        padding: 5px 10px;
+    }
+    &--rounded{
+        border-radius: 20px;
+    }
+    &--square{
+        border-radius: 0;
+    }
+    &--on{
+        cursor: pointer;
+    }
+    &--off{
+        pointer-events: none; //포인터가 가도 작동이 안되도록 한다
+        background-color: #fff;
+        color: #000;
+        cursor: not-allowed;
+    }
+    
+}

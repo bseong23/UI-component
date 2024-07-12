@@ -1,0 +1,42 @@
+@import "common";
+
+.text {
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 10px 15px;
+    box-sizing: border-box;
+
+    &.large {
+        width: 200px;
+        height: 40px; 
+        font-size: 20px;
+    }
+
+    &.medium {
+        width: 150px; 
+        height: 30px;
+        font-size: 15px;
+    }
+
+    &.small {
+        width: 100px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    &.rounded {
+        border-radius: 50px;
+    }
+
+    &.square {
+        border-radius: 0;
+    }
+
+    &.disabled {
+        background-color: #f2f2f2;
+        cursor: not-allowed;
+    }
+    
+}

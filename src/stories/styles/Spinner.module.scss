@@ -1,0 +1,41 @@
+@import "common";
+
+.spinner-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  // spinner style
+  border: solid 5px rgba(207, 207, 207, 0.2);
+  box-sizing: border-box;
+  animation: spin 1s infinite ease-in-out;
+
+  // 중앙 정렬
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.small {
+    width: 30px;
+    height: 30px;
+    border: solid 3px rgba(207, 207, 207, 0.2);
+  }
+  &.large {
+    width: 65px;
+    height: 65px;
+  }
+  .inner {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border: solid 2px rgba(207, 207, 207, 0.2);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
